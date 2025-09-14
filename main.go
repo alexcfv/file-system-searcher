@@ -5,12 +5,7 @@ import (
 	"log"
 	"os"
 	"path/filepath"
-	"regexp"
 )
-
-var regexps = []*regexp.Regexp{
-	regexp.MustCompile(`(?i)user`),
-}
 
 func walkFn(path string, f os.FileInfo, err error) error {
 	for _, r := range regexps {
