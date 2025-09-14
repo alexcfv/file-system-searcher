@@ -15,7 +15,7 @@ var regexps = []*regexp.Regexp{
 func walkFn(path string, f os.FileInfo, err error) error {
 	for _, r := range regexps {
 		if r.MatchString(path) {
-			fmt.Printf(`[+] HIT: %s\n`, path)
+			fmt.Printf("[+] HIT: %s\n", path)
 		}
 	}
 	return nil
