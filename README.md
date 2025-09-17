@@ -1,7 +1,14 @@
+# 🔎App for search files in file system struct
+(File names in filenames.go)
+
+---
+
 ## Input:
 ```cmd
 run main.go <root folder>
 ```
+
+---
 
 ## Output:
 ```cmd
